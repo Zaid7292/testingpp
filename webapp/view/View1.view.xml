@@ -1,0 +1,25 @@
+<mvc:View controllerName="testingpp.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+    	<List
+		items="{M>/}"
+		headerText="Products">
+		<ObjectListItem
+	
+			title="{M>ProductName}" 
+			type="Active"
+			press="onListItemPress"
+			number="12-02-2025"
+			numberUnit="">
+			<firstStatus>
+				<ObjectStatus
+					text="{M>ProductID}"
+				/>
+			</firstStatus>
+			<ObjectAttribute text="{M>UnitsInStock} {M>UnitsOnOrder}" />
+			<ObjectAttribute text="{M>UnitPrice}" />
+		</ObjectListItem>
+	</List>
+    </Page>
+</mvc:View>
