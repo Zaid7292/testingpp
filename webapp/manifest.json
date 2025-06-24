@@ -16,10 +16,10 @@
       "toolsId": "3ddf0706-0e8a-4227-9886-f086330b8562"
     },
     "dataSources": {
-  "Main":{
-    "uri": "/model/Main.json",
-    "type": "JSON"
-  }
+      "Main": {
+        "uri": "/model/Main.json",
+        "type": "JSON"
+      }
     }
   },
   "sap.ui": {
@@ -58,7 +58,7 @@
           "bundleName": "testingpp.i18n.i18n"
         }
       },
-      "M":{
+      "M": {
         "type": "sap.ui.model.json.JSONModel",
         "dataSource": "Main"
       }
@@ -104,5 +104,9 @@
       "id": "App",
       "async": true
     }
+  },
+  "sap.cloud": {
+    "public": true,
+    "service": "testingpp"
   }
 }
